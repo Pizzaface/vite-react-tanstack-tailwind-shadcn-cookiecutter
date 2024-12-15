@@ -30,32 +30,8 @@ function BaseLayout() {
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink asChild>
-                  <Link className={navigationMenuTriggerStyle()} to="/blog">
-                    Blog
-                  </Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
-
-          <div className="ml-auto">
-            <Button
-              className="w-9 rounded-full p-0"
-              variant={"outline"}
-              size="sm"
-              asChild
-            >
-              <a
-                href="https://github.com/mattiaz9/vite-react-tanstack-tailwind-shadcn-starter"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <SiGithub size={18} className="text-muted-foreground" />
-              </a>
-            </Button>
-          </div>
         </div>
       </header>
 

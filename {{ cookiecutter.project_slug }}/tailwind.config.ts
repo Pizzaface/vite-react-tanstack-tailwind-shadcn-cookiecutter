@@ -98,10 +98,10 @@ export default {
     require("tailwindcss-animate"),
     require("tailwindcss-interaction-media"),
     require("tailwindcss-safe-area"),
-    plugin(({ matchUtilities, theme }) => {
+    plugin(({ matchUtilities, theme }: { matchUtilities: any; theme: any }) => {
       matchUtilities(
         {
-          "ring-offset-reset": (value) => ({
+          "ring-offset-reset": (value: { match: (arg0: RegExp) => any[] }) => ({
             "--current-background": value.match(/^hsl\((.+)\)$/)?.[1] ?? value,
           }),
         },

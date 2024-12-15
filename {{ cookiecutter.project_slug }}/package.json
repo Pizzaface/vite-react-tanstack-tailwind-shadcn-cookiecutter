@@ -1,7 +1,7 @@
 {
-  "name": "vite-react-tanstack-tailwind-shadcn-starter",
-  "version": "2.0.0",
-  "license": "MIT",
+  "name": "{{ cookiecutter.project_slug }}",
+  "version": "{{ cookiecutter.version }}",
+  "license": "{{ cookiecutter.license }}",
   "type": "module",
   "scripts": {
     "dev": "vite --host",

@@ -25,7 +25,15 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src", "typings", "vite.config.ts", ".eslintrc.cjs", "postcss.config.cjs", "prettier.config.mjs", "tailwind.config.ts"],
+  "include": [
+    "src",
+    "typings",
+    "vite.config.ts",
+    ".eslintrc.cjs",
+    "postcss.config.cjs",
+    "prettier.config.mjs",
+    "tailwind.config.ts"
+  ],
   "exclude": ["build", "node_modules", "public"],
   "references": [
     {
