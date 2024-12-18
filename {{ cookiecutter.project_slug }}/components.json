@@ -6,7 +6,7 @@
   "tailwind": {
     "config": "tailwind.config.ts",
     "css": "src/app/globals.css",
-    "baseColor": "{{ cookiecutter.base_color }}"
+    "baseColor": "blue-600"
     "cssVariables": true
   },
   "aliases": {
