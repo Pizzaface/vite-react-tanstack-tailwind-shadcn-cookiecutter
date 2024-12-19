@@ -1,5 +1,5 @@
 {
-  "name": "my_project",
+  "name": "{{ cookiecutter.project_slug }}",
   "version": "0.1.0",
   "license": "UNLICENSED",
   "type": "module",

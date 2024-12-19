@@ -5,8 +5,8 @@
   "tsx": true,
   "tailwind": {
     "config": "tailwind.config.ts",
-    "css": "src/app/globals.css",
-    "baseColor": "blue-600"
+    "css": "src/globals.css",
+    "baseColor": "{{ cookiecutter.base_color }}",
     "cssVariables": true
   },
   "aliases": {
