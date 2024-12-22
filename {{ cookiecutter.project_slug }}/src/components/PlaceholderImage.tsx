@@ -30,9 +30,9 @@ interface PlaceholderImageProps {
  * - onClick (function): Click handler.
  */
 
-const PlaceholderImage: React.FC<PlaceholderImageProps> = ({
-  width = 300,
-  height = 200,
+export const PlaceholderImage: React.FC<PlaceholderImageProps> = ({
+  width = 1600,
+  height = 900,
   id,
   grayscale = false,
   blur = 0,

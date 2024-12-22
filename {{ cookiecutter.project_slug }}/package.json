@@ -1,7 +1,7 @@
 {
   "name": "{{ cookiecutter.project_slug }}",
   "version": "0.1.0",
-  "license": "UNLICENSED",
+  "license": "{{ cookiecutter.license }}",
   "type": "module",
   "scripts": {
     "dev": "vite dev --host",
