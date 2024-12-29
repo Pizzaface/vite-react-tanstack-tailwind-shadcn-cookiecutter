@@ -21,11 +21,19 @@ if __name__ == "__main__":
 
     # Move everything inside the Project Directory to the root of the project
     project_dir = Path(PROJECT_DIRECTORY)
+    parent_dir = project_dir.parent
+
     for item in project_dir.iterdir():
         if item.is_dir():
-            shutil.move(item, project_dir.parent)
+            shutil.move(
+                item.resolve().absolute().as_posix(),
+                project_dir.parent.resolve().absolute().as_posix(),
+            )
         elif item.is_file():
-            shutil.move(item, project_dir.parent)
+            shutil.move(
+                item.resolve().absolute().as_posix(),
+                project_dir.parent.resolve().absolute().as_posix(),
+            )
 
     # Remove the Project Directory
     shutil.rmtree(project_dir, ignore_errors=True)
