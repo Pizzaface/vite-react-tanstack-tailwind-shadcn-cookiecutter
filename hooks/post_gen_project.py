@@ -25,11 +25,17 @@ if __name__ == "__main__":
 
     for item in project_dir.iterdir():
         if item.is_dir():
+            if (parent_dir / item.name).exists():
+                shutil.rmtree(parent_dir / item.name, ignore_errors=True)
+
             shutil.move(
                 item.resolve().absolute().as_posix(),
                 project_dir.parent.resolve().absolute().as_posix(),
             )
         elif item.is_file():
+            if (parent_dir / item.name).exists():
+                os.remove(parent_dir / item.name)
+
             shutil.move(
                 item.resolve().absolute().as_posix(),
                 project_dir.parent.resolve().absolute().as_posix(),
